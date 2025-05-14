@@ -4,7 +4,7 @@
 ## Groupe :
 - Yohan @Crack-Boyy
 - Valentin @ValentinM-Dev
-- Malik @MalikCDA
+- Emile @MrScrupulus
 - Maxence @MaxenceFeriau01
 
 ## Branche :
