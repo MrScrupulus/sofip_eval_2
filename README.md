@@ -7,6 +7,8 @@
 - Emile @MrScrupulus
 - Maxence @MaxenceFeriau01
 
+github : https://github.com/MrScrupulus/sofip_eval_2.git
+
 ## Branche :
 - main
 - dev/emile
