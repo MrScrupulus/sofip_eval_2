@@ -11,6 +11,8 @@ github [github][1]
 
 figma [figma][2] 
 
+jira [jira][3]
+
 ## Branche :
 - main
 - dev/emile
@@ -44,3 +46,4 @@ Pendant votre évalution, vous aurez vos journée de FOAD habituelle, a chaque f
 
 [1]: https://github.com/MrScrupulus/sofip_eval_2.git "github"
 [2]: https://www.figma.com/design/v6yGZ0EayiDll2E5XLsjvq/Olympe?node-id=0-1&m=dev&t=ErropHid4OW3jxwj-1 "figma"
+[3]: https://maxenceferiau.atlassian.net/jira/software/projects/GPO/boards/35 "jira"
