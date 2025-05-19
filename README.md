@@ -7,7 +7,9 @@
 - Emile @MrScrupulus
 - Maxence @MaxenceFeriau01
 
-github : https://github.com/MrScrupulus/sofip_eval_2.git
+github [github][1] 
+
+figma [figma][2] 
 
 ## Branche :
 - main
@@ -39,3 +41,6 @@ Le 26 mai je vous ouvrirez vos différents salon sur discord, je vous transmettr
 
 ## FOAD ##
 Pendant votre évalution, vous aurez vos journée de FOAD habituelle, a chaque fin de journée de FOAD individuellement vous me renverrai sur un pdf ou un .md zippé le liens de votre repository GihHub.
+
+[1]: https://github.com/MrScrupulus/sofip_eval_2.git "github"
+[2]: https://www.figma.com/design/v6yGZ0EayiDll2E5XLsjvq/Olympe?node-id=0-1&m=dev&t=ErropHid4OW3jxwj-1 "figma"
