@@ -11,7 +11,7 @@
 - main
 - dev/emile
 - dev/yohan
-- dev/maxence
+- dev/max
 - dev/valentin
 
 ## COMPÉTENCE ÉVALUER ##
