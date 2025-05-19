@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.Ph1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.Pmain {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;      /* Plus grand ! */
+    object-fit: cover;
+}
+
