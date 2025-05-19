@@ -9,8 +9,10 @@
 
 ## Branche :
 - main
-- dev
-- 
+- dev/emile
+- dev/yohan
+- dev/maxence
+- dev/valentin
 
 ## COMPÉTENCE ÉVALUER ##
  - Git/GitHub
