@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (rect.top <= 150 && rect.bottom >= 150) {
                 navItems.forEach(item => item.classList.remove('current'));
                 navItems[index].classList.add('current');
+                navItems.forEach(item => item.removeAttribute('aria-current'));
+                navItems[index].setAttribute('aria-current', 'page');
             }
         });
     }
