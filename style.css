@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 section{
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 15vh;
 }
 body {
@@ -22,6 +22,7 @@ body {
 h1,
 h2,
 h3 {
+  margin: 10px;
   font-family: "Orbitron", sans-serif;
   color: #888888;
   font-style: shadow;
@@ -29,9 +30,12 @@ h3 {
     0 0 20px #ff0055, 0 0 25px #ff0055, 0 0 30px #ff0055, 0 0 35px #ff0055;
     text-align: center;
 }
-.index_title_accueil, .photos_title, .contact_title, .machines_title{
+.index_title_accueil, 
+.photos_title, 
+.contact_title, 
+.machines_title{
   font-size: 2rem;
-  margin-top: 2vh;
+  margin-top: 10vh;
 }
 
 /* Header & nav */
@@ -117,12 +121,12 @@ a:hover {
   overflow: hidden;
 }
 /* Photos & carrousel */
-.photos_title{
+/* .photos_title{
   text-align: center;
   font-family: "Orbitron", sans-serif;
   width: 100%;
   margin-bottom: 2rem;
-}
+} */
 
 .carousel-container {
   display: flex;
@@ -135,7 +139,7 @@ a:hover {
   margin-right: 90px; /* Mets la valeur que tu veux pour l'écart */
 }
 
-.Pmain {
+.photos_main {
   height: 100vh;
   display: flex;
   flex-direction: column;
