@@ -27,20 +27,113 @@
     </header>
     <section class="index_section">
         <main>
-         
+
         </main>
     </section>
     <section class="machines_section">
-
+        <header>
+        <h1>Nos Machines</h1>
+        </header>
+        <main>
+            <h2 class="machines_title">Machine n°1</h2>
+            <div class="machines_machines">
+                <img src="images/machine1.jpg" alt="Machine n°1"\>
+            <p class="machines_description">Description de la machine n°1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </main>
     </section>
     <section class="photos_section">
-
+        <header><h1 class="Ph1">Nos photos</h1></header>
+        <main class="Pmain">
+      
+        <div
+        class="carousel-container d-flex justify-content-center align-items-center"
+      >
+        <div class="d-flex flex-column me-4">
+          <button class="btn btn-primary mb-2" onclick="TournePhoto('equipe')">
+            Équipe
+          </button>
+          <button
+            class="btn btn-primary mb-2"
+            onclick="TournePhoto('tournois')"
+          >
+            Tournois
+          </button>
+          <button class="btn btn-primary mb-2" onclick="TournePhoto('site')">
+            Site
+          </button>
+          <button class="btn btn-primary" onclick="TournePhoto('evenements')">
+            Événements
+          </button>
+        </div>
+        <div id="carouselExample" class="carousel slide" style="width: 600px">
+          <div class="carousel-inner" id="carousel-inner"></div>
+                <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+          >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </main>
+    
+       
     </section>
     <section class="contact_section">
+        <header>
+            <h1>Contact</h1>
+        </header>
+    <main>
+        <h2 class="contact_h2">Contactez-nous</h2>
+        <p>
+            Pour toutes questions, demandes ou suggestions, n'hésitez pas à nous contacter via le formulaire, 
+            nous vous répondrons par mail dans les 48 heures après un an et trois jours de liste d'attente. Soyez patient !!!
+        </p>
+        <div class="contact_container_form">
+            <form  class="contact_form" action="register" method="POST">
+                
+                <div class="contact_form_input">
+                    <label for="mail">Email</label>
+                    <input class="" type="mail" id="mail" name="mail" required>
+                </div>
+                <div class="contact_form_input">
+                    <label for="firstname">Prénom</label>
+                    <input class="" type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="contact_form_input">
+                    <label for="lastname">Nom</label>
+                    <input class="" type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="contact_form_input">
+                    <label for="message">Entrez votre message</label>
+                    <textarea class="" name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="cgu" id="cgu" required>
+                    <label for="cgu">En cochant cette case vous acceptez les conditions d'utilisations</label>
+                </div>
+                <button class="contact_form_btn" type="submit">Envoyer</button>
+            </form>
+        </div>
         
+    </main>
 
     </section>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

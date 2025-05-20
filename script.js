@@ -1,21 +1,21 @@
 const photos = {
     equipe: [
-        { src: "docs & divers/cs.jpg", alt: "Équipe 1" },
-        { src: "docs & divers/League.jpg", alt: "Équipe 2" }
+        { src: "images/cs.jpg", alt: "Équipe 1" },
+        { src: "images/League.jpg", alt: "Équipe 2" }
     ],
     tournois: [
-        { src: "docs & divers/League.jpg", alt: "Tournoi 1" },
-        { src: "docs & divers/League.jpg", alt: "Tournoi 1" },
-        { src: "docs & divers/League.jpg", alt: "Tournoi 1" },
-        { src: "docs & divers/League.jpg", alt: "Tournoi 2" }
+        { src: "images/League.jpg", alt: "Tournoi 1" },
+        { src: "images/League.jpg", alt: "Tournoi 1" },
+        { src: "images/League.jpg", alt: "Tournoi 1" },
+        { src: "images/League.jpg", alt: "Tournoi 2" }
     ],
     site: [
-        { src: "docs & divers/cs.jpg", alt: "Entraînement 1" },
-        { src: "docs & divers/League.jpg", alt: "Entraînement 2" }
+        { src: "images/cs.jpg", alt: "Entraînement 1" },
+        { src: "images/League.jpg", alt: "Entraînement 2" }
     ],
     evenements: [
-        { src: "docs & divers/League.jpg", alt: "Divers 1" },
-        { src: "docs & divers/League.jpg", alt: "Divers 2" }
+        { src: "images/League.jpg", alt: "Divers 1" },
+        { src: "images/League.jpg", alt: "Divers 2" }
     ]
 };
 
