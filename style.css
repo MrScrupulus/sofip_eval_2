@@ -129,12 +129,12 @@ a:hover {
   justify-content: center;
 }
 /* Photos & carrousel */
-/* .photos_title{
+ .photos_title{
   text-align: center;
   font-family: "Orbitron", sans-serif;
   width: 100%;
   margin-bottom: 2rem;
-} */
+} 
 
 .carousel-container {
   display: flex;
