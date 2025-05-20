@@ -11,6 +11,7 @@ html {
 }
 section{
   height: 100vh;
+  padding-top: 15vh;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -30,6 +31,7 @@ h3 {
 }
 .index_title_accueil, .photos_title, .contact_title, .machines_title{
   font-size: 2rem;
+  margin-top: 2vh;
 }
 
 /* Header & nav */
@@ -52,7 +54,9 @@ h3 {
 }
 .index_nav {
   background-color: #000;
+  
 }
+
 .index_nav ul {
   display: flex;
   justify-content: space-around;
@@ -75,6 +79,42 @@ a:hover {
   font-style: shadow;
   text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055,
     0 0 20px #ff0055, 0 0 25px #ff0055, 0 0 30px #ff0055, 0 0 35px #ff0055;
+}
+.index_nav_li {
+    color: #ff0055;
+    display: flex;
+    padding: 3vh;
+    font-size: 2rem;
+}
+.index_nav_li.current {
+    color: #FFFFFF;
+}
+.index_nav {
+  background-color: #000;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.index_nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 10vh;
+}
+
+.index_container_olympe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.index_container_olympe.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 /* Photos & carrousel */
 .photos_title{
