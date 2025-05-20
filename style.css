@@ -36,6 +36,7 @@ h3 {
 .machines_title{
   font-size: 2rem;
   margin-top: 10vh;
+  padding: 20px;
 }
 
 /* Header & nav */
@@ -119,6 +120,13 @@ a:hover {
   opacity: 0;
   height: 0;
   overflow: hidden;
+}
+
+/* machines */
+.machines_img{
+  width: 20vw;
+  height: auto;
+  justify-content: center;
 }
 /* Photos & carrousel */
 /* .photos_title{
