@@ -19,77 +19,77 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScroll = currentScroll;
   });
 
-    // Gestion des sections actives
-    function updateActiveSection() {
-        const sections = document.querySelectorAll('section');
-        const navItems = document.querySelectorAll('.index_nav_li');
-        
-        sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= 150 && rect.bottom >= 150) {
-                navItems.forEach(item => item.classList.remove('current'));
-                navItems[index].classList.add('current');
-            }
-        });
-    }
+  // Gestion des sections actives
+  function updateActiveSection() {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".index_nav_li");
 
-    // Écouteur pour le scroll
-    window.addEventListener('scroll', updateActiveSection);
-    updateActiveSection();
-
-    // Gestion du scroll smooth
-    document.querySelectorAll('.index_nav_li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            const navHeight = nav.offsetHeight;
-            
-            window.scrollTo({
-                top: targetSection.offsetTop - navHeight,
-                behavior: 'smooth'
-            });
-        });
+    sections.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 150 && rect.bottom >= 150) {
+        navItems.forEach((item) => item.classList.remove("current"));
+        navItems[index].classList.add("current");
+      }
     });
+  }
+
+  // Écouteur pour le scroll
+  window.addEventListener("scroll", updateActiveSection);
+  updateActiveSection();
+
+  // Gestion du scroll smooth
+  document.querySelectorAll(".index_nav_li a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+      const navHeight = nav.offsetHeight;
+
+      window.scrollTo({
+        top: targetSection.offsetTop - navHeight,
+        behavior: "smooth",
+      });
+    });
+  });
 });
 
 // Gestion du carousel
-document.addEventListener('DOMContentLoaded', function() {
-    const nav = document.querySelector('.index_nav');
-    const header = document.querySelector('.index_container_olympe');
-    const headerHeight = header.offsetHeight;
-    let lastScroll = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".index_nav");
+  const header = document.querySelector(".index_container_olympe");
+  const headerHeight = header.offsetHeight;
+  let lastScroll = 0;
 
-    // Gestion de la nav fixe
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
+  // Gestion de la nav fixe
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
 
-        if (currentScroll > headerHeight) {
-            nav.classList.add('fixed');
-            header.classList.add('hidden');
-        } else {
-            nav.classList.remove('fixed');
-            header.classList.remove('hidden');
-        }
-
-        lastScroll = currentScroll;
-    });
-
-    // Gestion des sections actives
-    function updateActiveSection() {
-        const sections = document.querySelectorAll('section');
-        const navItems = document.querySelectorAll('.index_nav_li');
-        
-        sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= 150 && rect.bottom >= 150) {
-                navItems.forEach(item => item.classList.remove('current'));
-                navItems[index].classList.add('current');
-                navItems.forEach(item => item.removeAttribute('aria-current'));
-                navItems[index].setAttribute('aria-current', 'page');
-            }
-        });
+    if (currentScroll > headerHeight) {
+      nav.classList.add("fixed");
+      header.classList.add("hidden");
+    } else {
+      nav.classList.remove("fixed");
+      header.classList.remove("hidden");
     }
+
+    lastScroll = currentScroll;
+  });
+
+  // Gestion des sections actives
+  function updateActiveSection() {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".index_nav_li");
+
+    sections.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 150 && rect.bottom >= 150) {
+        navItems.forEach((item) => item.classList.remove("current"));
+        navItems[index].classList.add("current");
+        navItems.forEach((item) => item.removeAttribute("aria-current"));
+        navItems[index].setAttribute("aria-current", "page");
+      }
+    });
+  }
 
   // Écouteur pour le scroll
   window.addEventListener("scroll", updateActiveSection);
@@ -151,3 +151,32 @@ function TournePhoto(section) {
 
 // Charge la première section par défaut
 window.onload = () => TournePhoto("equipe");
+
+//Gestion d'affichage des composants matériels
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".machine_toggleButton");
+
+  toggleButtons.forEach((button) => {
+    const targetContentId = button.getAttribute("aria-controls");
+    const hiddenContent = document.getElementById(targetContentId);
+
+    //Vérification des contenue caché
+    if (hiddenContent && !hiddenContent.classList.contains("hidden")) {
+      hiddenContent.classList.add("hidden");
+      button.setAttribute("aria-expanded", "false");
+      buttonText.textContent = "Afficher le contenu";
+    }
+
+    button.addEventListener("click", function () {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+      //Changement d'état
+      this.setAttribute("aria-expanded", !isExpanded);
+
+      //Afficher ou cacher le contenu associé (utilisant l'ID du aria-controls)
+      if (hiddenContent) {
+        hiddenContent.classList.toggle("hidden");
+      }
+    });
+  });
+});

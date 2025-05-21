@@ -85,22 +85,41 @@ Un café gaming où discuter stratégies autour d’un bon snack. <br>
         <h1 class="machines_title" id="machines_title">Nos Machines</h1>
         </header>
     <main>
-        <div class="machines_machines">
-            <img src="images/machine.png" alt="Machine" class="machines_img"\>
-            <img src="images/chaise.png" alt="chaise" class="machines_img"\>
-            <img src="images/console.jpg" alt="console" class="machines_img"\>
-            <img src="images/casque.png" alt="casque" class="machines_img"\>
+        <div class="machines_container">
+        <button class="machine_toggleButton" aria-controls="machine_hiddenMachine" aria-expanded="false">
+            <img src="images/machine.png" alt="Les Machines">
+        </button>
+        <button class="machine_toggleButton" aria-controls="machine_hiddenChaise" aria-expanded="false">
+            <img src="images/chaise.png" alt="Les Chaises">
+        </button>
+        <button class="machine_toggleButton" aria-controls="machine_hiddenConsole" aria-expanded="false">
+            <img src="images/console.jpg" alt="Les Consoles">
+        </button>
+        <button class="machine_toggleButton" aria-controls="machine_hiddenCasque" aria-expanded="false">
+            <img src="images/casque.png" alt="Les Casques">
+        </button>
         </div>
-        <div class="machines_materiel">
-            <p class="machines_ordinateur">Processeur: Intel Core i7 ou i9 de dernière génération ou AMD Ryzen 7/9</p>
-            <p class="machines_ordinateur">Carte Graphique: NVIDIA GeForce RTX 4070/4080/4090 ou AMD Radeon RX 7800 XT/7900 XT/7900 XTX.</p>
-            <p class="machines_ordinateur">RAM: 32GB DDR5.</p>
-            <p class="machines_ordinateur">Stockage: SSD NVMe de 1 To ou 2 To.</p>
-            <p class="machines_ordinateur">Ecran: Moniteur gaming 27 pouces (ou 32 pouces) avec une résolution QHD (2560x1440)</p>
-            <p class="machines_chaise">Chaises Gaming Ergonomiques: Modèles axés sur le confort pour de longues sessions de jeu, avec un bon soutien lombaire et cervical.</p>
-            <p class="machines_casques">Casques Gaming avec Microphone: Casques de haute qualité offrant un son immersif (surround virtuel 7.1 par exemple) et un microphone clair pour la communication en équipe.</p>
-            <p class="machines_console">Consoles de Nouvelle Génération: PlayStation 5 et Xbox Series X, pour offrir l'accès aux jeux les plus récents et aux meilleures performances console. Pour les jeux familliaux et occasionnel. Une Nintendo Switch.</p>
+
+        <div id="machine_hiddenMachine" class="content hidden" aria-live="polite">
+            <p>Processeur: Intel Core i7 ou i9 de dernière génération ou AMD Ryzen 7/9</p>
+            <p>Carte Graphique: NVIDIA GeForce RTX 4070/4080/4090 ou AMD Radeon RX 7800 XT/7900 XT/7900 XTX.</p>
+            <p>RAM: 32GB DDR5.</p>
+            <p>Stockage: SSD NVMe de 1 To ou 2 To.</p>
+            <p>Ecran: Moniteur gaming 27 pouces (ou 32 pouces) avec une résolution QHD (2560x1440)</p>
         </div>
+
+        <div id="machine_hiddenChaise" class="content hidden" aria-live="polite">
+             <p>Chaises Gaming Ergonomiques: Modèles axés sur le confort pour de longues sessions de jeu, avec un bon soutien lombaire et cervical.</p>
+        </div>
+
+        <div id="machine_hiddenConsole" class="content hidden" aria-live="polite">
+            <p>Consoles de Nouvelle Génération: PlayStation 5 et Xbox Series X, pour offrir l'accès aux jeux les plus récents et aux meilleures performances console. Pour les jeux familliaux et occasionnel. Une Nintendo Switch.</p>
+        </div>
+
+        <div id="machine_hiddenCasque" class="content hidden" aria-live="polite">
+            <p>Casques Gaming avec Microphone: Casques de haute qualité offrant un son immersif (surround virtuel 7.1 par exemple) et un microphone clair pour la communication en équipe.</p>
+        </div>
+
     </main>
     </section>
 
