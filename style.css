@@ -147,7 +147,6 @@ section:not(.hero-section) {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
   padding: 0 2rem;
@@ -302,6 +301,7 @@ input:checked + .slider:before {
 .hero-section {
   height: 100vh;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   position: relative;
