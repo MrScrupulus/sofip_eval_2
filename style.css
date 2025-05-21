@@ -141,7 +141,7 @@ a:hover {
 } 
 
 
-* Photos & carrousel - SECTION MODIFIÉE */
+/* Photos & carrousel - SECTION MODIFIÉE */
 .photos_section {
   display: flex;
   flex-direction: column;
