@@ -680,6 +680,8 @@ input:checked + .slider:before {
 .gallery-carousel {
   max-width: 900px;
   margin: 0 auto;
+  position: relative; /* Ajout important */
+  padding: 0 70px; /* Espace pour les flèches */
 }
 
 .carousel-item img {
@@ -688,30 +690,8 @@ input:checked + .slider:before {
   object-fit: cover;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.8;
-}
 
-.carousel-control-prev {
-  left: -25px;
-}
 
-.carousel-control-next {
-  right: -25px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-  background: var(--gradient-bg);
-}
 
 /* ===== CONTACT SECTION ===== */
 .contact-section {
