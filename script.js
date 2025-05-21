@@ -116,29 +116,29 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 150 && rect.bottom >= 150) {
-        navItems.forEach((item) => item.classList.remove("current"));
-        navItems[index].classList.add("current");
-        navItems.forEach((item) => item.removeAttribute("aria-current"));
-        navItems[index].setAttribute("aria-current", "page");
+        navItems.forEach(item => item.classList.remove('current'));
+        navItems[index].classList.add('current');
+        navItems.forEach(item => item.removeAttribute('aria-current'));
+        navItems[index].setAttribute('aria-current', 'page');
       }
     });
   }
-
+  
   // Écouteur pour le scroll
-  window.addEventListener("scroll", updateActiveSection);
+  window.addEventListener('scroll', updateActiveSection);
   updateActiveSection();
-
+  
   // Gestion du scroll smooth
-  document.querySelectorAll(".index_nav_li a").forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
+  document.querySelectorAll('.index_nav_li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const targetId = this.getAttribute("href");
+      const targetId = this.getAttribute('href');
       const targetSection = document.querySelector(targetId);
       const navHeight = nav.offsetHeight;
-
+      
       window.scrollTo({
         top: targetSection.offsetTop - navHeight,
-        behavior: "smooth",
+        behavior: 'smooth'
       });
     });
   });
