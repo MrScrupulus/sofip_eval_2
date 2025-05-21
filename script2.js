@@ -24,7 +24,7 @@ const photos = {
 document.addEventListener("DOMContentLoaded", function() {
   // Référence des éléments DOM
   const body = document.body;
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector(".main-navbar");
   const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
   const navLinksContainer = document.querySelector(".nav-links-container");
   const navLinks = document.querySelectorAll(".nav-link");
