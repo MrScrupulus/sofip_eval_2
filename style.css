@@ -157,6 +157,66 @@ a:hover {
   display: none;
 }
 
+/* Div Images des Clients*/
+.index_clients {
+margin-top: 4rem;
+margin-left: 15rem;
+display: flex;
+flex-direction: row;
+width: 30rem;
+height: 30em;
+opacity: 90%;
+
+}
+
+/*Div décors*/
+.index_decors {
+display: flex;
+flex-direction: row;
+width: 30rem;
+height: 30rem;
+opacity: 90%;
+}
+
+/*Images des lieux*/
+.index_decors_lieu {
+border-radius: 10%;
+margin: 2rem;
+box-shadow:
+  3px 3px #0044cc,
+  -1em 0 0.4em #ff0055;
+  width: 28rem;
+  height: 28rem;
+  margin-left: 19rem;
+}
+
+.index_decors_lieu:hover {
+  box-shadow:
+  3px 3px #ff0055,
+  -1em 0 0.4em #0044cc;
+  width: 32rem;
+height: 32rem;
+opacity: 70%;
+}
+
+/* Images */
+.index_image_clients {
+  border-radius: 10%;
+  display: flex;
+  margin: 2rem;
+  box-shadow: 10px 5px 5px #111111;
+  position: relative;
+}
+
+
+.index_image_clients:hover {
+  box-shadow: 10px 5px 5px #FFFFFF;
+  color: #ff0055;
+width: 40rem;
+height: 40rem;
+opacity: 80%;
+}
+
 /* machines */
 .machines_img {
   width: 20vw;
