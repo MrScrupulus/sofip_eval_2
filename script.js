@@ -1,23 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".index_nav");
-  const header = document.querySelector(".index_container_olympe");
-  const headerHeight = header.offsetHeight;
-  let lastScroll = 0;
-
-  // Gestion de la nav fixe
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > headerHeight) {
-      nav.classList.add("fixed");
-      header.classList.add("hidden");
-    } else {
-      nav.classList.remove("fixed");
-      header.classList.remove("hidden");
-    }
-
-    lastScroll = currentScroll;
-  });
+  const sections = document.querySelectorAll("section");
+  const navItems = document.querySelectorAll(".index_nav_li");
 
   // Gestion des sections actives
   function updateActiveSection() {
@@ -108,6 +92,29 @@ document.addEventListener("DOMContentLoaded", function () {
         behavior: "smooth",
       });
     });
+  });
+});
+
+// Gestion du mode RGAA
+document.addEventListener("DOMContentLoaded", function () {
+  const accessibilityToggle = document.getElementById("accessibility-toggle");
+
+  // Vérifier si le mode RGAA était activé précédemment
+  const rgaaMode = localStorage.getItem("rgaaMode") === "true";
+  if (rgaaMode) {
+    document.body.classList.add("rgaa-mode");
+    accessibilityToggle.checked = true;
+  }
+
+  // Gérer le changement du toggle
+  accessibilityToggle.addEventListener("change", function () {
+    if (this.checked) {
+      document.body.classList.add("rgaa-mode");
+      localStorage.setItem("rgaaMode", "true");
+    } else {
+      document.body.classList.remove("rgaa-mode");
+      localStorage.setItem("rgaaMode", "false");
+    }
   });
 });
 
