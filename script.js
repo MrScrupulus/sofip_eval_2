@@ -1,7 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".index_nav");
-  const sections = document.querySelectorAll("section");
-  const navItems = document.querySelectorAll(".index_nav_li");
+  const header = document.querySelector(".index_container_olympe");
+  const headerHeight = header.offsetHeight;
+  const firstSection = document.querySelector(".index_section");
+  let lastScroll = 0;
+
+  // Créer un élément placeholder pour maintenir l'espace
+  const placeholder = document.createElement("div");
+  placeholder.className = "placeholder";
+  document.body.insertBefore(placeholder, firstSection);
+
+  // Récupérer le titre de présentation
+  const presentationTitle = firstSection.querySelector("h2");
+
+  // Fonction pour gérer le défilement
+  function handleScroll() {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > headerHeight) {
+      // Quand on dépasse la hauteur de l'en-tête
+      if (!nav.classList.contains("fixed")) {
+        placeholder.style.height = headerHeight + "px";
+        nav.classList.add("fixed");
+        header.classList.add("hidden");
+      }
+
+      // Faire apparaître le titre de présentation seulement quand on descend
+      if (presentationTitle) {
+        presentationTitle.style.opacity = "1";
+      }
+    } else {
+      // Quand on est en haut de la page
+      nav.classList.remove("fixed");
+      header.classList.remove("hidden");
+      placeholder.style.height = "0px";
+
+      // Si on remonte tout en haut, cacher le titre de présentation
+      if (currentScroll < 10 && presentationTitle) {
+        presentationTitle.style.opacity = "0";
+      }
+    }
+
+    lastScroll = currentScroll;
+  }
+
+  // Initialiser l'état du titre de présentation
+  if (presentationTitle) {
+    presentationTitle.style.opacity = window.pageYOffset > 10 ? "1" : "0";
+  }
+
+  // Écouter l'événement de défilement
+  window.addEventListener("scroll", handleScroll);
 
   // Gestion des sections actives
   function updateActiveSection() {
