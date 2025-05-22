@@ -120,7 +120,7 @@ section:not(.hero-section) {
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: var(--gray-color);
+  color: var(--secondary-color);
   max-width: 700px;
   margin: 0 auto;
   
@@ -379,6 +379,7 @@ input:checked + .slider:before {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color:#F05;
 }
 
 .hero-cta {
@@ -447,6 +448,7 @@ input:checked + .slider:before {
 .about-text p {
   margin-bottom: 2rem;
   font-size: 1.1rem;
+  color: white;
 }
 
 .about-image {
@@ -497,6 +499,8 @@ input:checked + .slider:before {
 .feature-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color: var(--light-color);
+  text-shadow: var(--shadow-neon);
 }
 
 .feature-card p {
@@ -711,6 +715,56 @@ input:checked + .slider:before {
   border-radius: var(--border-radius);
   height: 500px;
   object-fit: cover;
+}
+.gallery-info {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    z-index: 2;
+}
+
+.gallery-title h3 {
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: var(--shadow-neon);
+}
+
+.gallery-description p {
+    color: var(--light-color);
+    font-family: var(--font-body);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border: 8px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(5px);
+}
+
+/* Ajout du responsive pour mobile */
+@media (max-width: 768px) {
+    .gallery-info {
+        position: static; /* Enlève le positionnement absolu */
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 2rem; /* Espace entre la photo et les infos */
+        text-align: center;
+    }
+
+    .gallery-description p {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .gallery-title h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
 
 

@@ -1,23 +1,73 @@
 // Photos pour le carrousel, organisées par catégories
 const photos = {
   equipe: [
-    { src: "images/cs.jpg", alt: "Équipe 1" },
-    { src: "images/League.jpg", alt: "Équipe 2" },
+    { 
+      src: "images/cs.jpg", 
+      alt: "Équipe 1",
+      title: "Counter Strike 2",
+      description: "Notre équipe CS2 en pleine action lors du dernier tournoi"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Équipe 2",
+      title: "League of Legends",
+      description: "L'équipe LOL pendant les qualifications régionales"
+    }
   ],
   tournois: [
-    { src: "images/League.jpg", alt: "Tournoi 1" },
-    { src: "images/League.jpg", alt: "Tournoi 2" },
-    { src: "images/League.jpg", alt: "Tournoi 3" },
-    { src: "images/League.jpg", alt: "Tournoi 4" },
+    { 
+      src: "images/League.jpg", 
+      alt: "Tournoi 1",
+      title: "Championship Gaming Series",
+      description: "Grand tournoi annuel regroupant les meilleures équipes"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Tournoi 2",
+      title: "ESL Pro League",
+      description: "Compétition internationale de haut niveau"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Tournoi 3",
+      title: "Dreamhack Masters",
+      description: "Festival esport majeur avec les équipes élites"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Tournoi 4",
+      title: "BLAST Premier",
+      description: "Tournoi premium avec les meilleurs joueurs mondiaux"
+    }
   ],
   site: [
-    { src: "images/cs.jpg", alt: "Site 1" },
-    { src: "images/League.jpg", alt: "Site 2" },
+    { 
+      src: "images/cs.jpg", 
+      alt: "Site 1",
+      title: "Salle Principal",
+      description: "Notre espace gaming principal avec 50 PC haute performance"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Site 2",
+      title: "Zone Compétition",
+      description: "Espace dédié aux tournois avec configuration pro"
+    }
   ],
   evenements: [
-    { src: "images/League.jpg", alt: "Événement 1" },
-    { src: "images/League.jpg", alt: "Événement 2" },
-  ],
+    { 
+      src: "images/League.jpg", 
+      alt: "Événement 1",
+      title: "LAN Party",
+      description: "Soirée gaming avec plus de 100 joueurs"
+    },
+    { 
+      src: "images/League.jpg", 
+      alt: "Événement 2",
+      title: "Master Class",
+      description: "Formation avec des pros du gaming"
+    }
+  ]
 };
 
 // Attendre que le DOM soit chargé
@@ -162,28 +212,46 @@ function initGallery() {
 // Fonction pour charger les images de la galerie en fonction du filtre
 function loadGalleryImages(filter) {
   const carouselInner = document.getElementById("carousel-inner");
+  const titleContainer = document.querySelector(".gallery-title");
+  const descriptionContainer = document.querySelector(".gallery-description");
   
   if (!carouselInner || !photos[filter]) return;
   
-  // Vider le carrousel
   carouselInner.innerHTML = "";
   
-  // Ajouter les images correspondant au filtre
   photos[filter].forEach((photo, idx) => {
     const div = document.createElement("div");
     div.className = "carousel-item" + (idx === 0 ? " active" : "");
     div.innerHTML = `
-      <img src="${photo.src}" class="d-block w-100" alt="${photo.alt}">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>${photo.alt}</h5>
+      <div class="carousel-content-wrapper">
+        <img src="${photo.src}" class="carousel-image" alt="${photo.alt}">
       </div>
     `;
     carouselInner.appendChild(div);
+
+    // Met à jour le titre et la description pour la première image
+    if (idx === 0) {
+      titleContainer.innerHTML = `<h3>${photo.title}</h3>`;
+      descriptionContainer.innerHTML = `<p>${photo.description}</p>`;
+    }
   });
-  
-  // Réinitialiser le carrousel Bootstrap
+
+  // Détruire l'ancien carrousel s'il existe
+  const oldCarousel = bootstrap.Carousel.getInstance(document.getElementById("carouselGallery"));
+  if (oldCarousel) {
+    oldCarousel.dispose();
+  }
+
+  // Initialiser un nouveau carrousel
   const carousel = new bootstrap.Carousel(document.getElementById("carouselGallery"));
-  carousel.to(0);
+
+  // Ajouter l'écouteur d'événements pour le changement de slide
+  document.getElementById("carouselGallery").addEventListener('slide.bs.carousel', (event) => {
+    const slideIndex = event.to;
+    const currentPhoto = photos[filter][slideIndex];
+    titleContainer.innerHTML = `<h3>${currentPhoto.title}</h3>`;
+    descriptionContainer.innerHTML = `<p>${currentPhoto.description}</p>`;
+  });
 }
 
 // Animation au défilement pour les éléments
