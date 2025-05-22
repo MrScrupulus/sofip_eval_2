@@ -768,6 +768,35 @@ input:checked + .slider:before {
 }
 
 
+/* Version tablette */
+@media (max-width: 992px) {
+    .gallery-info {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .gallery-description p {
+        max-width: 600px; /* Un peu plus large que sur mobile */
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .gallery-title h3 {
+        font-size: 1.8rem; /* Taille plus grande que sur mobile */
+        margin-bottom: 1.5rem;
+    }
+
+    /* Ajustement de l'espacement */
+    .carousel-item img {
+        height: 400px; /* Hauteur adaptée aux tablettes */
+    }
+}
+
 
 
 /* ===== CONTACT SECTION ===== */
