@@ -21,12 +21,12 @@ const photos = {
       title: "Championship Gaming Series",
       description: "Grand tournoi annuel regroupant les meilleures équipes"
     },
-    { 
-      src: "images/Equipe3.75716cca-373d-47f9-84cc-96cfaad73527.png", 
-      alt: "Tournoi 2",
-      title: "ESL Pro League",
-      description: "Compétition internationale de haut niveau"
-    },
+    // { 
+    //   src: "images/Equipe3.75716cca-373d-47f9-84cc-96cfaad73527.png", 
+    //   alt: "Tournoi 2",
+    //   title: "ESL Pro League",
+    //   description: "Compétition internationale de haut niveau"
+    // },
     { 
       src: "images/tournoi2.png", 
       alt: "Tournoi 3",
