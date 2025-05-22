@@ -16,25 +16,25 @@ const photos = {
   ],
   tournois: [
     { 
-      src: "images/League.jpg", 
+      src: "images/equipe2.db6a1118-7bb5-4abf-86ba-30d510d0de89.png", 
       alt: "Tournoi 1",
       title: "Championship Gaming Series",
       description: "Grand tournoi annuel regroupant les meilleures équipes"
     },
     { 
-      src: "images/League.jpg", 
+      src: "images/Equipe3.75716cca-373d-47f9-84cc-96cfaad73527.png", 
       alt: "Tournoi 2",
       title: "ESL Pro League",
       description: "Compétition internationale de haut niveau"
     },
     { 
-      src: "images/League.jpg", 
+      src: "images/tournoi2.png", 
       alt: "Tournoi 3",
       title: "Dreamhack Masters",
       description: "Festival esport majeur avec les équipes élites"
     },
     { 
-      src: "images/League.jpg", 
+      src: "images/78.png", 
       alt: "Tournoi 4",
       title: "BLAST Premier",
       description: "Tournoi premium avec les meilleurs joueurs mondiaux"
@@ -42,13 +42,13 @@ const photos = {
   ],
   site: [
     { 
-      src: "images/cs.jpg", 
+      src: "images/tournoi3.png", 
       alt: "Site 1",
       title: "Salle Principal",
       description: "Notre espace gaming principal avec 50 PC haute performance"
     },
     { 
-      src: "images/League.jpg", 
+      src: "images/Event.png", 
       alt: "Site 2",
       title: "Zone Compétition",
       description: "Espace dédié aux tournois avec configuration pro"
@@ -56,13 +56,13 @@ const photos = {
   ],
   evenements: [
     { 
-      src: "images/League.jpg", 
+      src: "images/100.cb4adf26-4fc7-4cf0-80f3-551cacb532c6.png", 
       alt: "Événement 1",
       title: "LAN Party",
       description: "Soirée gaming avec plus de 100 joueurs"
     },
     { 
-      src: "images/League.jpg", 
+      src: "images/Event2.fbcb829b-d0c2-4c7c-b3f8-42df1b40086f.png", 
       alt: "Événement 2",
       title: "Master Class",
       description: "Formation avec des pros du gaming"
