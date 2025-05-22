@@ -133,8 +133,8 @@ section:not(.hero-section) {
   left: 0;
   width: 100%;
   height: 80px;
-  background: linear-gradient(92deg, #0FF 10.15%, #F05 105.61%), #000;
-  backdrop-filter: blur(10px);
+  background: color: #888888;;
+  backdrop-filter: blur(30px);
   z-index: 1000;
   transition: var(--transition);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -159,16 +159,17 @@ section:not(.hero-section) {
   display: flex;
   align-items: center;
   gap: 1rem;
+
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 90px;
   width: auto;
 }
 
 .nav-logo span {
   font-family: var(--font-heading);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--primary-color);
   text-shadow: 0 0 5px var(--primary-color);
@@ -180,13 +181,16 @@ section:not(.hero-section) {
 }
 
 .nav-links {
+  color: #888888;
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .nav-link {
-  color: var(--light-color);
-  font-size: 1.1rem;
+  color: #888888;
+  font-size: 1.6rem;
   font-weight: 500;
   padding: 0.5rem 0;
   position: relative;
@@ -210,8 +214,8 @@ section:not(.hero-section) {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--secondary-color);
-  text-shadow: 0 0 5px var(--secondary-color);
+  color: #888888;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055;
 }
 
 .nav-controls {
@@ -222,6 +226,8 @@ section:not(.hero-section) {
 
 .accessibility-toggle {
   display: flex;
+  flex-direction: row;
+  justify-content: right;
   align-items: center;
   gap: 0.5rem;
 }
@@ -588,9 +594,11 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   
+  
 }
 .equipment-card img{
   align-items: center;
+  text-align: left;
 }
 .equipment-card:hover {
   transform: translateY(-10px);
@@ -619,7 +627,8 @@ input:checked + .slider:before {
 
 .equipment-details {
   padding: 1.5rem;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  text-align: left;
 }
 
 .equipment-details h3 {
@@ -627,10 +636,13 @@ input:checked + .slider:before {
   margin-bottom: 1rem;
   color: var(--secondary-color);
   text-shadow: 0 0 5px var(--secondary-color);
+  text-align: left;
+  
 }
 
 .equipment-details ul {
   padding-left: 1.5rem;
+  text-align: left;
 }
 
 .equipment-details ul li {
@@ -638,6 +650,7 @@ input:checked + .slider:before {
   position: relative;
   padding-left: 0.5rem;
   color: #e0e0e0;
+  text-align: left;
 }
 
 .equipment-details ul li::before {
@@ -645,6 +658,8 @@ input:checked + .slider:before {
   position: absolute;
   left: -1rem;
   color: var(--primary-color);
+  text-align: left;
+  
 }
 
 /* ===== GALLERY SECTION ===== */
@@ -947,6 +962,7 @@ body.rgaa-mode h5,
 body.rgaa-mode h6,
 body.rgaa-mode p,
 body.rgaa-mode a,
+
 body.rgaa-mode .nav-logo span,
 body.rgaa-mode .footer-logo span,
 body.rgaa-mode .toggle-label,
@@ -957,8 +973,48 @@ body.rgaa-mode .contact-text h3,
 body.rgaa-mode .form-group label {
   color: #000000 !important;
   text-shadow: none !important;
+  opacity: 1 !important;
+  font-weight: 800 !important;
+}
+body.rgaa-mode .nav-container{
+  background-color: #ffffff;
+}
+body.rgaa-mode .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 1 !important;
+}
+body.rgaa-mode .nav-logo span {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #000000 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
 }
 
+body.rgaa-mode .nav-logo img{
+  content:  url("images/icob&w.png");
+  height: 90px;
+  width: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+  
+}
+body.rgaa-mode a.hero-cta {
+    background: #888888 !important; /* Change la couleur du bouton CTA */
+    border: 2px solid #000000 !important; /* Ajoute une bordure pour un meilleur contraste */
+    color: #000000 !important; /* Assure la lisibilité du texte */
+    box-shadow: none !important; /* Supprime les effets de lueur */
+    font-weight: bold !important; 
+}
+
+body.rgaa-mode a.hero-cta:hover {
+    background: #666666 !important; /* Légèrement plus foncé au survol */
+}
 body.rgaa-mode .section-header h2::after,
 body.rgaa-mode .hero-cta,
 body.rgaa-mode .gallery-filter-btn.active,
@@ -1044,6 +1100,10 @@ body.rgaa-mode .footer-bottom {
   
   .nav-links-container.active {
     left: 0;
+    /* background-color: black; */
+    backdrop-filter: blur(30px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 200px;
   }
   
   .nav-links {
