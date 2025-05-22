@@ -5,13 +5,13 @@ const photos = {
         src: "images/cs.jpg", 
         alt: "Équipe 1",
         title: "Counter Strike 2",
-        description: "Notre équipe CS2 en pleine action lors du dernier tournoi"
+        description: "Notre équipe CS2 en pleine action lors du dernier tournoi.."
       },
     { 
       src: "images/League.jpg", 
       alt: "Équipe 2",
       title: "League of Legends",
-      description: "L'équipe LOL pendant les qualifications régionales"
+      description: "L'équipe LOL pendant les qualifications régionales (aération recommandé)"
     }
   ],
   tournois: [
@@ -19,7 +19,7 @@ const photos = {
       src: "images/equipe2.db6a1118-7bb5-4abf-86ba-30d510d0de89.png", 
       alt: "Tournoi 1",
       title: "Championship Gaming Series",
-      description: "Grand tournoi annuel regroupant les meilleures équipes"
+      description: "Grand tournoi annuel regroupant les meilleures équipes avec un kit brosse à dents/dentifrice à la clé !"
     },
     // { 
     //   src: "images/Equipe3.75716cca-373d-47f9-84cc-96cfaad73527.png", 
@@ -31,13 +31,13 @@ const photos = {
       src: "images/tournoi2.png", 
       alt: "Tournoi 3",
       title: "Dreamhack Masters",
-      description: "Festival esport majeur avec les équipes élites"
+      description: "Festival esport majeur avec les équipes élites française (nos région ont du talent et du gel douche !) "
     },
     { 
       src: "images/78.png", 
       alt: "Tournoi 4",
       title: "BLAST Premier",
-      description: "Tournoi premium avec les meilleurs joueurs mondiaux"
+      description: "Tournoi premium avec les meilleurs joueurs mondiaux (Ils sont tous au collége)"
     }
   ],
   site: [
@@ -45,13 +45,13 @@ const photos = {
       src: "images/tournoi3.png", 
       alt: "Site 1",
       title: "Salle Principal",
-      description: "Notre espace gaming principal avec 50 PC haute performance"
+      description: "Notre espace gaming principal avec 50 PC à la pointe de la technologie évidemment !"
     },
     { 
       src: "images/Event.png", 
       alt: "Site 2",
       title: "Zone Compétition",
-      description: "Espace dédié aux tournois avec configuration pro"
+      description: "Espace dédié aux tournois et aux modo discord"
     }
   ],
   evenements: [
@@ -59,13 +59,13 @@ const photos = {
       src: "images/100.cb4adf26-4fc7-4cf0-80f3-551cacb532c6.png", 
       alt: "Événement 1",
       title: "LAN Party",
-      description: "Soirée gaming avec plus de 100 joueurs"
+      description: "Soirée gaming avec plus de 100 joueurs, des distributeurs de déo sont situés à l'entrée.."
     },
     { 
       src: "images/Event2.fbcb829b-d0c2-4c7c-b3f8-42df1b40086f.png", 
       alt: "Événement 2",
       title: "Master Class",
-      description: "Formation avec des pros du gaming"
+      description: "Formation avec des pros pour devenir un no life"
     }
   ]
 };
