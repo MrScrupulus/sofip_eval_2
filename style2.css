@@ -133,7 +133,7 @@ section:not(.hero-section) {
   left: 0;
   width: 100%;
   height: 80px;
-  background: color: #888888;;
+  /* background-color: #888888; */
   backdrop-filter: blur(30px);
   z-index: 1000;
   transition: var(--transition);
@@ -1025,6 +1025,7 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 
+
 /* ===== HIGH CONTRAST MODE ===== */
 body.rgaa-mode {
   background: #ffffff;
@@ -1079,13 +1080,19 @@ body.rgaa-mode .nav-logo span {
     display: block !important;
 }
 
-body.rgaa-mode .nav-logo img{
+body.rgaa-mode .nav-logo img {
   content:  url("images/icob&w.png");
   height: 90px;
   width: auto;
   opacity: 1 !important;
   visibility: visible !important;
-  
+}
+body.rgaa-mode .footer-logo img {
+  content:  url("images/icob&w.png") !important;
+  height: 40px;
+  width: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 body.rgaa-mode a.hero-cta {
     background: #888888 !important; /* Change la couleur du bouton CTA */
@@ -1146,6 +1153,20 @@ body.rgaa-mode .footer-bottom {
   color: #333333 !important;
 }
 
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1200px) {
   .about-content {
