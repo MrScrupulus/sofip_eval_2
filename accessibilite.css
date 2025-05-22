@@ -53,3 +53,8 @@ body.accessibilite {
 .accessibilite a:focus {
     text-decoration: none;
 }
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
