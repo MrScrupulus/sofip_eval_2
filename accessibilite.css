@@ -1,0 +1,55 @@
+body.accessibilite {
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image: none !important;
+}
+
+.accessibilite main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.accessibilite h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.accessibilite h2 {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.accessibilite h3 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.accessibilite p, 
+.accessibilite li {
+    margin-bottom: 1em;
+}
+
+.accessibilite ul {
+    padding-left: 20px;
+}
+
+.accessibilite a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+.accessibilite a:visited {
+    color: #551A8B;
+}
+
+.accessibilite a:hover,
+.accessibilite a:focus {
+    text-decoration: none;
+}

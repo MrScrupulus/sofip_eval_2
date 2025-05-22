@@ -15,11 +15,15 @@
     <title>Olympe | Temple du Gaming</title>
 </head>
 <body>
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+        <a href="#nav" class="skip-link">Aller à la navigation</a>
+    </div>
     <!-- Navigation fixe -->
-    <nav class="main-navbar">
+    <nav class="main-navbar" role="navigation" aria-label="Navigation principale">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/ico.png" alt="Logo Olympe">
+                <img src="images/ico.png" alt="Logo Olympe" aria-label="Logo Olympe ">
                 <span>Olympe</span>
             </div>
             <div class="nav-links-container">
@@ -334,7 +338,8 @@
                 <form class="contact-form" action="register" method="POST">
                     <div class="form-group">
                         <label for="mail">Email</label>
-                        <input type="email" id="mail" name="mail" placeholder="Votre adresse email" required>
+                        <input type="email" id="mail" name="mail" aria-required="true" aria-describedby="mail-help" placeholder="Votre adresse email" required>
+
                     </div>
                     
                     <div class="form-row">
@@ -366,7 +371,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo" aria-label="Pied de page">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="images/ico.png" alt="Logo Olympe">
@@ -381,6 +386,7 @@
                     <li><a href="#gallery">Galerie</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="cgu.html">CGU</a></li>
+                    <li><a href="accessibilite.html">Accessibilité</a></li>
                 </ul>
             </div>
             

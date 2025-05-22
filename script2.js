@@ -1,12 +1,12 @@
 // Photos pour le carrousel, organisées par catégories
 const photos = {
   equipe: [
-    { 
-      src: "images/cs.jpg", 
-      alt: "Équipe 1",
-      title: "Counter Strike 2",
-      description: "Notre équipe CS2 en pleine action lors du dernier tournoi"
-    },
+      { 
+        src: "images/cs.jpg", 
+        alt: "Équipe 1",
+        title: "Counter Strike 2",
+        description: "Notre équipe CS2 en pleine action lors du dernier tournoi"
+      },
     { 
       src: "images/League.jpg", 
       alt: "Équipe 2",
