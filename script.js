@@ -275,6 +275,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Appeler updateActiveSection au chargement de la page
   updateActiveSection();
+
+  // Gérer le clic en dehors du menu pour le fermer
+  document.addEventListener("click", function (event) {
+    const isClickInsideNav = navLinksContainer.contains(event.target);
+    const isClickOnToggle = mobileMenuToggle.contains(event.target);
+
+    if (
+      !isClickInsideNav &&
+      !isClickOnToggle &&
+      navLinksContainer.classList.contains("active")
+    ) {
+      mobileMenuToggle.classList.remove("active");
+      navLinksContainer.classList.remove("active");
+    }
+  });
+
+  // Empêcher la propagation du clic à l'intérieur du menu
+  navLinksContainer.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
 });
 
 // Fonction pour initialiser la galerie
