@@ -194,7 +194,7 @@ section:not(.hero-section) {
 .nav-links {
   color: #888888;
   display: flex;
-  gap: 5rem;
+  gap: 2.5rem;
   font-weight: bold;
   font-size: 1.3rem;
 }
