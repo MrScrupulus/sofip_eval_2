@@ -302,6 +302,7 @@ input:checked + .slider:before {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  justify-content: right;
   align-items: center;
   justify-content: center;
   position: relative;
