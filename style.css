@@ -102,6 +102,9 @@ section:not(.hero-section) {
 .contact-section {
   background: none;
 }
+.contact-info h3{
+  color: #888888;
+}
 
 .section-header {
   text-align: center;
