@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body & général */
+html {
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  padding-top: 5vh;
+  scroll-margin-top: 100px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, #0ff, #ff0055);
+  min-height: 75vh;
+  width: 100%;
+  padding-top: 100px;
+}
+h1,
+h2,
+h3 {
+  margin: 10px;
+  font-family: "Orbitron", sans-serif;
+  color: #888888 !important;
+  font-style: shadow;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055,
+    0 0 20px #ff0055, 0 0 25px #ff0055, 0 0 30px #ff0055, 0 0 35px #ff0055;
+  text-align: center;
+}
+.index_title_accueil,
+.photos_title,
+.contact_title,
+.machines_title {
+  font-size: 2rem;
+  position: relative;
+  top: 15vh;
+  margin-bottom: 10vh;
+}
+
+/* Header & nav */
+header {
+  display: none;
+}
+
+.index_nav {
+  background-color: #000;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.index_nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0 2rem;
+  gap: 3rem;
+  flex: 1;
+}
+.index_nav_li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.index_container_olympe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin-right: auto;
+  
+}
+
+.index_title_olympe {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.index_img_olympe {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.index_nav_li.index_container_olympe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  z-index: 1;
+}
+
+.index_nav_li:last-child {
+  margin-left: auto;
+  z-index: 1;
+}
+
+
+
+/* Conteneur pour les liens centrés */
+.index_nav_links {
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+.index_nav_li {
+  color: #ff0055;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  height: 100%;
+  white-space: nowrap;
+}
+
+a {
+  list-style: none;
+  text-decoration: none !important;
+  color: inherit;
+}
+a:hover {
+  color: #888888;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055;
+}
+
+.index_nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Suppression des styles qui ne sont plus nécessaires */
+.index_container_olympe.hidden {
+  display: none;
+}
+
+/* Div Images des Clients*/
+.index_clients {
+margin-top: 4rem;
+margin-left: 15rem;
+display: flex;
+flex-direction: row;
+width: 30rem;
+height: 30em;
+opacity: 90%;
+
+}
+
+/*Div décors*/
+.index_decors {
+display: flex;
+flex-direction: row;
+width: 30rem;
+height: 30rem;
+opacity: 90%;
+}
+
+/*Images des lieux*/
+.index_decors_lieu {
+border-radius: 10%;
+margin: 2rem;
+box-shadow:
+  3px 3px #0044cc,
+  -1em 0 0.4em #ff0055;
+  width: 28rem;
+  height: 28rem;
+  margin-left: 19rem;
+}
+
+
+
+.index_decors_lieu:hover {
+  box-shadow:
+  3px 3px #ff0055,
+  -1em 0 0.4em #0044cc;
+  width: 32rem;
+height: 32rem;
+opacity: 70%;
+}
+
+/* Images */
+.index_image_clients {
+  border-radius: 10%;
+  display: flex;
+  margin: 2rem;
+  box-shadow: 10px 5px 5px #111111;
+  position: relative;
+}
+
+
+.index_image_clients:hover {
+  box-shadow: 10px 5px 5px #FFFFFF;
+  color: #ff0055;
+width: 40rem;
+height: 40rem;
+opacity: 80%;
+}
+
+/* machines */
+.machines_img {
+  width: 20vw;
+  height: auto;
+  justify-content: center;
+}
+
+/* Photos & carrousel */
+.photos_title {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Photos & carrousel - SECTION MODIFIÉE */
+.photos_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.photos_title {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.photos_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style pour la colonne de boutons (à droite) */
+.d-flex.flex-column.me-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  left: -140px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+/* Style pour les boutons */
+.btn.btn-primary {
+  padding: 12px 24px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0044cc;
+  box-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+}
+
+/* Style pour le carrousel */
+#carouselExample {
+  width: 80% !important;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Style pour les images dans le carrousel */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* Contrôles du carrousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* Contact */
+.contact_h2_title {
+  text-align: left;
+}
+.contact_form_cgu {
+  color: #888888;
+}
+
+/* Toggle Switch pour le mode RGAA */
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 auto;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff0055;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff0055;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.index_nav_li .toggle-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mode RGAA */
+body.rgaa-mode {
+  background: #888888;
+  padding-top: 160px;
+}
+
+body.rgaa-mode h1,
+body.rgaa-mode h2,
+body.rgaa-mode h3,
+body.rgaa-mode h4,
+body.rgaa-mode p,
+body.rgaa-mode a,
+body.rgaa-mode .toggle-label {
+  color: #000000 !important;
+  text-shadow: none !important;
+  font-size: 1.6em !important;
+}
+
+body.rgaa-mode .index_nav {
+  background-color: #888888;
+  height: auto;
+}
+
+body.rgaa-mode .index_nav ul {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
+body.rgaa-mode .index_nav_li.index_container_olympe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.rgaa-mode .index_nav_li:last-child {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin: 0;
+}
+
+body.rgaa-mode .index_nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 0;
+}
+
+body.rgaa-mode .index_nav_links .index_nav_li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body.rgaa-mode .index_nav_li:not(.index_container_olympe):not(:last-child) {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+body.rgaa-mode .index_nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+body.rgaa-mode .index_nav_li:not(.index_container_olympe):not(:last-child) {
+  margin-top: 3rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body.rgaa-mode .index_nav_li:not(.index_container_olympe):not(:last-child) a {
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 0;
+}
+
+body.rgaa-mode .index_nav_li {
+  color: #000000;
+}
+
+body.rgaa-mode .toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+
+body.rgaa-mode .toggle-label {
+  white-space: nowrap;
+  font-size: 1.2rem !important;
+}
+
+body.rgaa-mode .switch {
+  width: 50px;
+  height: 28px;
+}
+
+body.rgaa-mode .slider:before {
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+}
+
+body.rgaa-mode input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Masquer les titres H1 des sections en mode RGAA */
+body.rgaa-mode .machines_title,
+body.rgaa-mode .photos_title,
+body.rgaa-mode .contact_title {
+  display: none;
+}
+
+/* .index_footer_container {
+  
+} */
+.index_footer_link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Contact Form */
+.contact_container_form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact_form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact_form_input label {
+  color: #ff0055;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 5px #ff0055;
+}
+
+.contact_form_input input,
+.contact_form_input textarea {
+  padding: 1rem;
+  border: 2px solid #ff0055;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.contact_form_input input:focus,
+.contact_form_input textarea:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.contact_form_input input::placeholder,
+.contact_form_input textarea::placeholder {
+  color: #888888;
+}
+
+.contact_form_input textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact_form_input input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contact_form_input input[type="checkbox"] + label {
+  display: inline;
+  font-size: 1rem;
+}
+
+.contact_form_btn {
+  background: linear-gradient(45deg, #ff0055, #00ffff);
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  align-self: center;
+  min-width: 200px;
+}
+
+.contact_form_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+  background: linear-gradient(45deg, #00ffff, #ff0055);
+}
+
+.contact_form_btn:active {
+  transform: translateY(0);
+}
+
+/* Style pour le mode RGAA du formulaire */
+body.rgaa-mode .contact_container_form {
+  background: #888888;
+  box-shadow: none;
+}
+
+body.rgaa-mode .contact_form_input label {
+  color: #000000;
+  text-shadow: none;
+}
+
+body.rgaa-mode .contact_form_input input,
+body.rgaa-mode .contact_form_input textarea {
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+body.rgaa-mode .contact_form_btn {
+  background: #000000;
+  color: #ffffff;
+}
+
+body.rgaa-mode .contact_form_btn:hover {
+  background: #333333;
+  box-shadow: none;
+}
