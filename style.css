@@ -1198,7 +1198,8 @@ body.rgaa-mode .footer-bottom {
     left: -100%;
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.79);
+    backdrop-filter: blur(30px);
     transition: var(--transition);
   }
   
@@ -1206,7 +1207,7 @@ body.rgaa-mode .footer-bottom {
     left: 0;
     /* background-color: black; */
     backdrop-filter: blur(30px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.79);
     width: 200px;
   }
   
