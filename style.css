@@ -253,7 +253,11 @@ section:not(.hero-section) {
   width: 0;
   height: 0;
 }
-
+span.toggle-label {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: white ;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -1351,7 +1355,30 @@ body.rgaa-mode .nav-links-container .nav-link.active {
     height: 300px;
   }
 
+  /* Modification du toggle d'accessibilité pour mobile */
   .accessibility-toggle {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .toggle-label {
+    font-size: 0.7rem;
+  }
+
+  .switch {
+    width: 40px;
+    height: 22px;
+  }
+
+  .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
   }
 }
