@@ -1057,6 +1057,28 @@ body.rgaa-mode .footer-bottom {
   }
   
   .accessibility-toggle {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .toggle-label {
+    font-size: 0.7rem;
+  }
+
+  .switch {
+    width: 40px;
+    height: 22px;
+  }
+
+  .slider:before {
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(18px);
   }
 }
