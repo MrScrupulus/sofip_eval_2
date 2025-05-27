@@ -1098,6 +1098,10 @@ body.rgaa-mode .form-group label {
   opacity: 1 !important;
   font-weight: 800 !important;
 }
+body.rgaa-mode .gallery-info p{
+  color: #ffffff !important;
+  background-color: #888888;
+}
 body.rgaa-mode .nav-container {
   background-color: #ffffff;
 }
@@ -1151,8 +1155,8 @@ body.rgaa-mode .contact-icon,
 body.rgaa-mode .submit-btn,
 body.rgaa-mode .social-icon:hover {
   background: #888888 !important;
-}
 
+}
 body.rgaa-mode .feature-card,
 body.rgaa-mode .testimonial-card,
 body.rgaa-mode .equipment-card,
