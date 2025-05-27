@@ -25,7 +25,7 @@ jira [jira][3]
 
 
 ## Palette couleur : 
-00FFFF, 111111, 888888, FF0055, FFFFFF
+#00FFFF, #111111, #888888, #FF0055, #FFFFFF
 
 ## Typographie
  * Titre : Orbitron
