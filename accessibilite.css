@@ -1,12 +1,15 @@
 body.accessibilite {
     background: #ffffff;
     color: #000000;
-    font-family: Arial, sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
     background-image: none !important;
+}
+h1, h2, h3{
+    font-family: Orbitron, sans-serif;
 }
 
 .accessibilite main {
