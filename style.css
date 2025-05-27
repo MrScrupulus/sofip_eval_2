@@ -676,6 +676,15 @@ box-shadow:
         margin-bottom: 1rem;
     }
 }
+@media (max-width: 1300px) {
+    .testimonial-container {
+        grid-template-columns: repeat(2, 1fr);
+        min-width: auto; /* Ajustement pour les écrans plus petits */
+    }
+}
+@media(max-width: 1200px) {
+    .testimonial-container {
+        grid-template-columns: 1fr;
 
 
 /* Version tablette */
