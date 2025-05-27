@@ -419,14 +419,47 @@ box-shadow:
   transition: var(--transition);
   border: 1px solid rgba(255, 0, 85, 0.2);
 }
-
+.feature-card::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  background: #00ffff;
+  border-radius: 50%;
+   top: -1px;
+  left: -1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+}
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background: rgba(30, 30, 30, 0.8);
   border-color: var(--primary-color);
+  
 }
+/* .feature-card:hover::before {
+  opacity: 1;animation: rotateAroundBorder 2s linear infinite;
+} */
 
+/* @keyframes rotateAroundBorder {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(calc(100% + 2px), 0);
+  }
+  50% {
+    transform: translate(calc(100% + 2px), calc(100% + 2px));
+  }
+  75% {
+    transform: translate(0, calc(100% + 2px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */
 .feature-icon {
   font-size: 2rem;
   color: var(--primary-color);
