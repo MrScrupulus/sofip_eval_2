@@ -549,10 +549,11 @@ input:checked + .slider:before {
 
 .testimonial-container {
   display: grid;
+  margin-right: 10px;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 1.2rem;
   max-width: 1400px;
-  min-width: none;
+  min-width: 1150px;
 }
 
 .testimonial-card {
@@ -560,7 +561,7 @@ input:checked + .slider:before {
   border-radius: var(--border-radius);
   width: 100%;
   min-width: 250px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
   position: relative;
