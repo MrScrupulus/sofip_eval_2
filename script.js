@@ -2,14 +2,14 @@
 const photos = {
   equipe: [
     {
-      src: "images/cs.jpg",
+      src: "images/cs.webp",
       alt: "Équipe 1",
       title: "Counter Strike 2",
       description:
         "Notre équipe CS2 en pleine action lors du dernier tournoi..",
     },
     {
-      src: "images/League.jpg",
+      src: "images/League.webp",
       alt: "Équipe 2",
       title: "League of Legends",
       description:
@@ -18,7 +18,7 @@ const photos = {
   ],
   tournois: [
     {
-      src: "images/equipe2.db6a1118-7bb5-4abf-86ba-30d510d0de89.png",
+      src: "images/gaming_scene.webp",
       alt: "Tournoi 1",
       title: "Championship Gaming Series",
       description:
@@ -31,14 +31,14 @@ const photos = {
     //   description: "Compétition internationale de haut niveau"
     // },
     {
-      src: "images/tournoi2.png",
+      src: "images/tournoi2.webp",
       alt: "Tournoi 3",
       title: "Dreamhack Masters",
       description:
         "Festival esport majeur avec les équipes élites française (nos région ont du talent et du gel douche !) ",
     },
     {
-      src: "images/78.png",
+      src: "images/78.webp",
       alt: "Tournoi 4",
       title: "BLAST Premier",
       description:
@@ -47,14 +47,14 @@ const photos = {
   ],
   site: [
     {
-      src: "images/tournoi3.png",
+      src: "images/tournoi3.webp",
       alt: "Site 1",
       title: "Salle Principal",
       description:
         "Notre espace gaming principal avec 50 PC à la pointe de la technologie évidemment !",
     },
     {
-      src: "images/Event.png",
+      src: "images/Event.webp",
       alt: "Site 2",
       title: "Zone Compétition",
       description: "Espace dédié aux tournois et aux modo discord",
@@ -62,14 +62,14 @@ const photos = {
   ],
   evenements: [
     {
-      src: "images/100.cb4adf26-4fc7-4cf0-80f3-551cacb532c6.png",
+      src: "images/compet_zone.webp",
       alt: "Événement 1",
       title: "LAN Party",
       description:
         "Soirée gaming avec plus de 100 joueurs, des distributeurs de déo sont situés à l'entrée..",
     },
     {
-      src: "images/Event2.fbcb829b-d0c2-4c7c-b3f8-42df1b40086f.png",
+      src: "images/gaming_zone.webp",
       alt: "Événement 2",
       title: "Master Class",
       description: "Formation avec des pros pour devenir un no life",
