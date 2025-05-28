@@ -999,19 +999,23 @@ input:checked + .slider:before {
 
 .form-check {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .form-check input[type="checkbox"] {
   width: 18px;
   height: 18px;
   accent-color: var(--primary-color);
+  flex-shrink: 0;
 }
 
 .form-check label {
   font-size: 0.9rem;
   color: #cccccc;
+  line-height: 1;
 }
 
 .submit-btn {
