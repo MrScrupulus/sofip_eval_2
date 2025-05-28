@@ -15,6 +15,8 @@ figma [figma][2]
 
 jira [jira][3]
 
+google slides [google][5]
+
 ## Branche :
 - main
 - dev/emile
@@ -59,3 +61,4 @@ Pendant votre évalution, vous aurez vos journée de FOAD habituelle, a chaque f
 [2]: https://www.figma.com/design/v6yGZ0EayiDll2E5XLsjvq/Olympe?node-id=0-1&m=dev&t=ErropHid4OW3jxwj-1 "figma"
 [3]: https://maxenceferiau.atlassian.net/jira/software/projects/GPO/boards/35 "jira"
 [4]: https://github.com/users/MrScrupulus/projects/6 "project"
+[5]: https://docs.google.com/presentation/d/17sNL5uXVlgVZGK2xyZBmF8SBIhEyEflxuybh0oX_Bow/edit?usp=sharing "google slides"
