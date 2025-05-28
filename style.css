@@ -58,13 +58,14 @@ body::before {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  margin-bottom: 1rem;
+h3 {
+  margin: 10px;
+  font-family: "Orbitron", sans-serif;
+  color: #888888 !important;
+  font-style: shadow;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055,
+    0 0 20px #ff0055, 0 0 25px #ff0055, 0 0 30px #ff0055, 0 0 35px #ff0055;
+    text-align: center;
 }
 
 a {
@@ -87,37 +88,74 @@ section:not(.hero-section) {
   backdrop-filter: blur(10px);
   padding: var(--section-padding);
   position: relative;
-  z-index: 1;
-  scroll-margin-top: 80px;
-  min-height: 100vh;
+  top: 15vh;
+  margin-bottom: 10vh;
+}
+
+/* Header & nav */
+.index_container_olympe {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(1px);
+  align-items: center;
 }
-.about-section,
-.equipment-section,
-.gallery-section,
-.contact-section {
-  background: none;
-}
-.contact-info h3{
-  color: #888888;
-}
-
-.section-header {
+.index_title_olympe {
   text-align: center;
-  margin-bottom: 3rem;
+  margin: 2vh;
+  font-size: 5rem;
+}
+.index_img_olympe {
+  width: 10 vw;
+  height: 10vh;
+  margin: 2vh;
+  /* filter: drop-shadow(0 0 1px #FF0055); */
+}
+.index_nav {
+  background-color: #000;
+  
 }
 
-.section-header h2 {
-  font-size: 2.5rem;
-  color: var(--light-color);
-  text-shadow: var(--shadow-neon);
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
+.index_nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: 10vh;
+  
+}
+.index_nav_li {
+  color: #ff0055;
+  display: flex;
+  padding: 3vh;
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  list-style: none;
+  text-decoration: none !important;
+  color: inherit;
+}
+a:hover {
+  color: #888888;
+  font-style: shadow;
+  text-shadow: 0 0 5px #ff0055, 0 0 10px #ff0055, 0 0 15px #ff0055,
+    0 0 20px #ff0055, 0 0 25px #ff0055, 0 0 30px #ff0055, 0 0 35px #ff0055;
+}
+.index_nav_li {
+    color: #ff0055;
+    display: flex;
+    padding: 3vh;
+    font-size: 2rem;
+}
+.index_nav_li.current {
+    color: #FFFFFF;
+}
+.index_nav {
+  background-color: #000;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  height : 10vh;
 }
 
 .section-header h2::after {
@@ -144,13 +182,9 @@ section:not(.hero-section) {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 80px;
-  /* background-color: #888888; */
-  backdrop-filter: blur(30px);
   z-index: 1000;
-  transition: var(--transition);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* height: 10vh; */
+  margin-bottom: 5vh;
 }
 
 .navbar.scrolled {
@@ -429,41 +463,8 @@ box-shadow:
    top: -1px;
   left: -1px;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  box-shadow: 0 0 10px #00ffff;
-}
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background: rgba(30, 30, 30, 0.8);
-  border-color: var(--primary-color);
-  
-}
-/* .feature-card:hover::before {
-  opacity: 1;animation: rotateAroundBorder 2s linear infinite;
-} */
-
-/* @keyframes rotateAroundBorder {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(calc(100% + 2px), 0);
-  }
-  50% {
-    transform: translate(calc(100% + 2px), calc(100% + 2px));
-  }
-  75% {
-    transform: translate(0, calc(100% + 2px));
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-} */
-.feature-icon {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  height: 0;
+  overflow: hidden;
 }
 
 /* machines */
@@ -476,10 +477,10 @@ box-shadow:
 
 /* Photos & carrousel */
 .photos_title {
-.photos_title {
   text-align: center;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
   margin-bottom: 2rem;
-}
 }
 
 /* Photos & carrousel - SECTION MODIFIÉE */
@@ -574,56 +575,14 @@ box-shadow:
   align-items: center;
 }
 
-.equipment-card:hover .equipment-image img {
-  transform: scale(1.1);
+.photos_title {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.equipment-details {
-  padding: 1.5rem;
-  /* flex-grow: 1; */
-  text-align: left;
-}
-
-.equipment-details h3 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  color: var(--secondary-color);
-  text-shadow: 0 0 5px var(--secondary-color);
-  text-align: left;
-}
-
-.equipment-details ul {
-  padding-left: 1.5rem;
-  text-align: left;
-}
-
-.equipment-details ul li {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 0.5rem;
-  color: #e0e0e0;
-  text-align: left;
-}
-
-.equipment-details ul li::before {
-  content: "➤";
-  position: absolute;
-  left: -1rem;
-  color: var(--primary-color);
-  text-align: left;
-}
-
-/* ===== GALLERY SECTION ===== */
-.gallery-section {
-  background: linear-gradient(to bottom, #101010, #080808);
-}
-
-.gallery-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.gallery-filter {
+.photos_main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function() {
       body.classList.remove("rgaa-mode");
       localStorage.setItem("rgaaMode", "false");
     }
+
+    lastScroll = currentScroll;
   });
   
   // Animation du navbar au scroll
@@ -228,12 +230,6 @@ function loadGalleryImages(filter) {
       </div>
     `;
     carouselInner.appendChild(div);
-
-    // Met à jour le titre et la description pour la première image
-    if (idx === 0) {
-      titleContainer.innerHTML = `<h3>${photo.title}</h3>`;
-      descriptionContainer.innerHTML = `<p>${photo.description}</p>`;
-    }
   });
 
   // Détruire l'ancien carrousel s'il existe
@@ -265,6 +261,18 @@ const animateOnScroll = function() {
     if (elementPosition < windowHeight - 100) {
       element.classList.add('animated');
     }
+
+    button.addEventListener("click", function () {
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+      //Changement d'état
+      this.setAttribute("aria-expanded", !isExpanded);
+
+      //Afficher ou cacher le contenu associé (utilisant l'ID du aria-controls)
+      if (hiddenContent) {
+        hiddenContent.classList.toggle("hidden");
+      }
+    });
   });
 };
 
