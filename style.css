@@ -40,7 +40,7 @@ body {
   background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed; /* Pour que l'image reste fixe pendant le défilement */
   background-repeat: no-repeat;
   min-height: 100vh;
   overflow-x: hidden;
@@ -83,7 +83,7 @@ img {
 }
 
 section:not(.hero-section) {
-  background: rgba(0, 0, 0, 0.8); 
+  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
   backdrop-filter: blur(10px);
   padding: var(--section-padding);
   position: relative;
@@ -654,8 +654,8 @@ box-shadow:
 .gallery-carousel {
   max-width: 900px;
   margin: 0 auto;
-  position: relative; 
-  padding: 0 70px; 
+  position: relative; /* Ajout important */
+  padding: 0 70px; /* Espace pour les flèches */
 }
 
 .carousel-item img {
@@ -716,8 +716,9 @@ box-shadow:
 @media (max-width: 1300px) {
     .testimonial-container {
         grid-template-columns: repeat(2, 1fr);
-        min-width: auto; 
-}}
+        min-width: auto; /* Ajustement pour les écrans plus petits */
+    }
+}
 @media(max-width: 1200px) {
     .testimonial-container {
         grid-template-columns: 1fr;
