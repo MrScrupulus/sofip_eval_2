@@ -40,7 +40,7 @@ body {
   background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Pour que l'image reste fixe pendant le défilement */
+  background-attachment: fixed; 
   background-repeat: no-repeat;
   min-height: 100vh;
   overflow-x: hidden;
@@ -83,7 +83,7 @@ img {
 }
 
 section:not(.hero-section) {
-  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  background: rgba(0, 0, 0, 0.8); 
   backdrop-filter: blur(10px);
   padding: var(--section-padding);
   position: relative;
@@ -770,8 +770,8 @@ input:checked + .slider:before {
 .gallery-carousel {
   max-width: 900px;
   margin: 0 auto;
-  position: relative; /* Ajout important */
-  padding: 0 70px; /* Espace pour les flèches */
+  position: relative; 
+  padding: 0 70px; 
 }
 
 .carousel-item img {
@@ -810,12 +810,12 @@ input:checked + .slider:before {
 @media (max-width: 768px) {
   
   .gallery-info {
-    position: static; /* Enlève le positionnement absolu */
+    position: static;
     left: auto;
     top: auto;
     transform: none;
     width: 100%;
-    margin-top: 2rem; /* Espace entre la photo et les infos */
+    margin-top: 2rem; 
     text-align: center;
   }
 
@@ -833,9 +833,8 @@ input:checked + .slider:before {
 @media (max-width: 1300px) {
     .testimonial-container {
         grid-template-columns: repeat(2, 1fr);
-        min-width: auto; /* Ajustement pour les écrans plus petits */
-    }
-}
+        min-width: auto; 
+}}
 @media(max-width: 1200px) {
     .testimonial-container {
         grid-template-columns: 1fr;
@@ -856,19 +855,19 @@ input:checked + .slider:before {
   }
 
   .gallery-description p {
-    max-width: 600px; /* Un peu plus large que sur mobile */
+    max-width: 600px; 
     margin: 0 auto;
     padding: 1.5rem;
   }
 
   .gallery-title h3 {
-    font-size: 1.8rem; /* Taille plus grande que sur mobile */
+    font-size: 1.8rem; 
     margin-bottom: 1.5rem;
   }
 
-  /* Ajustement de l'espacement */
+
   .carousel-item img {
-    height: 400px; /* Hauteur adaptée aux tablettes */
+    height: 400px; 
   }
 }
 
@@ -1174,15 +1173,15 @@ body.rgaa-mode .footer-logo img {
   visibility: visible !important;
 }
 body.rgaa-mode a.hero-cta {
-  background: #888888 !important; /* Change la couleur du bouton CTA */
-  border: 2px solid #000000 !important; /* Ajoute une bordure pour un meilleur contraste */
-  color: #000000 !important; /* Assure la lisibilité du texte */
-  box-shadow: none !important; /* Supprime les effets de lueur */
+  background: #888888 !important; 
+  border: 2px solid #000000 !important; 
+  color: #000000 !important;
+  box-shadow: none !important;
   font-weight: bold !important;
 }
 
 body.rgaa-mode a.hero-cta:hover {
-  background: #666666 !important; /* Légèrement plus foncé au survol */
+  background: #666666 !important; 
 }
 body.rgaa-mode .section-header h2::after,
 body.rgaa-mode .hero-cta,
@@ -1422,7 +1421,7 @@ body.rgaa-mode .nav-links-container .nav-link.active {
     height: 300px;
   }
 
-  /* Modification du toggle d'accessibilité pour mobile */
+  
   .accessibility-toggle {
     display: flex;
     align-items: center;
